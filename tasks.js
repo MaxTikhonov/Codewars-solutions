@@ -22,6 +22,26 @@ Examples:
 rps('scissors','paper') // Player 1 won!
 rps('scissors','rock') // Player 2 won!
 rps('paper','paper') // Draw! */
+
 const rps = (p1, p2) => {
-  
+  let arr = ['rock','paper','scissors'];
+  let a = arr.indexOf(p1);
+  let b = arr.indexOf(p2);
+  let res = '';
+  if(b == a) {
+    res = 'Draw!';
+  }
+  if(a > b) {
+    res = 'Player 1 won!';
+  }
+  if(b > a){
+    res = 'Player 2 won!';
+  }
+  if(a == 0 && b == 2) {
+    res = 'Player 1 won!';
+  }
+  if(b == 0 && a == 2) {
+    res = 'Player 2 won!';
+  }
+  return res;
 };
