@@ -103,5 +103,11 @@ a = "abcdefghijklmnopqrstuvwxyz"
 longest(a, a) -> "abcdefghijklmnopqrstuvwxyz" */
 
 function longest(s1, s2) {
-  
+  let out = '';
+  let stringSet = new Set(s1.concat(s2));
+  let arrayOfLetters = Array.from(stringSet).sort();
+  for (let i = 0; i < arrayOfLetters.length; i++) {
+    out += arrayOfLetters[i];
+  }
+  return out;
 }
