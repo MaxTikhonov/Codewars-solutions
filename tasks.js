@@ -1,5 +1,6 @@
 // --- task 1 ----
 
+
 // Can you find the needle in the haystack?
 
 // Write a function findNeedle() that takes an array full of junk but containing one "needle"
@@ -13,6 +14,11 @@
 // function findNeedle(haystack) {
 //   return "found the needle at position " + haystack.indexOf('needle');
 // }
+
+function findNeedle(haystack) {
+  return "found the needle at position " + haystack.indexOf('needle');
+}
+
 
 // --- task 2 ---
 /* Let's play! You have to return which player won! In case of a draw return Draw!.
