@@ -125,5 +125,23 @@ function longest(s1, s2) {
 // For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
 
 function squareSum(numbers) {
+  let b = [];
+  b = numbers.map(x => x ** 2);
+  return b.reduce(function (previousValue, currentValue) {
+    return previousValue + currentValue;
+  });
+}
+
+// --- task 8 ---
+
+// An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
+
+// Example: (Input --> Output)
+
+// "Dermatoglyphics" --> true
+// "aba" --> false
+// "moOse" --> false (ignore letter case)
+
+function isIsogram(str) {
 
 }
