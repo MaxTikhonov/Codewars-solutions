@@ -143,5 +143,5 @@ function squareSum(numbers) {
 // "moOse" --> false (ignore letter case)
 
 function isIsogram(str) {
-  //...
+
 }
