@@ -1,18 +1,18 @@
 // --- task 1 ----
 
-/ *Can you find the needle in the haystack?
+// Can you find the needle in the haystack?
 
-Write a function findNeedle() that takes an array full of junk but containing one "needle"
+// Write a function findNeedle() that takes an array full of junk but containing one "needle"
 
-After your function finds the needle it should return a message (as a string) that says:
+// After your function finds the needle it should return a message(as a string) that says:
 
-"found the needle at position " plus the index it found the needle, so:
+// "found the needle at position " plus the index it found the needle, so:
 
-findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
-should return "found the needle at position 5" (in COBOL "found the needle at position 6") */
-function findNeedle(haystack) {
-  return "found the needle at position " + haystack.indexOf('needle');
-}
+// findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
+// should return "found the needle at position 5"(in COBOL "found the needle at position 6") * /
+// function findNeedle(haystack) {
+//   return "found the needle at position " + haystack.indexOf('needle');
+// }
 
 // --- task 2 ---
 /* Let's play! You have to return which player won! In case of a draw return Draw!.
@@ -24,23 +24,23 @@ rps('scissors','rock') // Player 2 won!
 rps('paper','paper') // Draw! */
 
 const rps = (p1, p2) => {
-  let arr = ['rock','paper','scissors'];
+  let arr = ['rock', 'paper', 'scissors'];
   let a = arr.indexOf(p1);
   let b = arr.indexOf(p2);
   let res = '';
-  if(b == a) {
+  if (b == a) {
     res = 'Draw!';
   }
-  if(a > b) {
+  if (a > b) {
     res = 'Player 1 won!';
   }
-  if(b > a){
+  if (b > a) {
     res = 'Player 2 won!';
   }
-  if(a == 0 && b == 2) {
+  if (a == 0 && b == 2) {
     res = 'Player 1 won!';
   }
-  if(b == 0 && a == 2) {
+  if (b == 0 && a == 2) {
     res = 'Player 2 won!';
   }
   return res;
@@ -56,11 +56,11 @@ Example:
 
 None of the arrays will be empty, so you don't have to worry about that! */
 
-function removeEveryOther(arr){
- for(let i = 1; i < arr.length; i++) {
-   arr.splice(i, 1);
- }
-    return arr;
+function removeEveryOther(arr) {
+  for (let i = 1; i < arr.length; i++) {
+    arr.splice(i, 1);
+  }
+  return arr;
 }
 
 // --- task 4 ---
@@ -72,7 +72,7 @@ Examples:
 solution('abc', 'bc') // returns true
 solution('abc', 'd') // returns false */
 
-function solution(str, ending){
+function solution(str, ending) {
   return str.endsWith(ending);
 }
 
@@ -82,9 +82,9 @@ function solution(str, ending){
 /* Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers. */
 
 function even_or_odd(number) {
-  if(number % 2 == 0) {
+  if (number % 2 == 0) {
     return "Even";
-}
+  }
   else {
     return "Odd";
   }
