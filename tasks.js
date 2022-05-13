@@ -143,5 +143,15 @@ function squareSum(numbers) {
 // "moOse" --> false (ignore letter case)
 
 function isIsogram(str) {
-
+  if (str == '') {
+    return true;
+  }
+  let a = str.toLowerCase();
+  let b = new Set(a);
+  if (a.length > b.size) {
+    return false;
+  }
+  else {
+    return true;
+  }
 }
