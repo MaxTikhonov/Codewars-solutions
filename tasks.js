@@ -175,5 +175,18 @@ function isIsogram(str) {
 // Output: "even"
 
 function oddOrEven(array) {
-
+  let a = [];
+  a = array;
+  if (array.length == 0) {
+    a = [0];
+  }
+  let b = Math.abs(a.reduce(
+    (x, y) => x + y
+  ));
+  if (b % 2 == 0) {
+    return "even";
+  }
+  if (b % 2 == 1) {
+    return "odd";
+  }
 }
