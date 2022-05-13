@@ -107,7 +107,7 @@ longest(a, b) -> "abcdefklmopqwxy"
 
 a = "abcdefghijklmnopqrstuvwxyz"
 longest(a, a) -> "abcdefghijklmnopqrstuvwxyz" */
-// asdsada
+
 function longest(s1, s2) {
   let out = '';
   let stringSet = new Set(s1.concat(s2));
