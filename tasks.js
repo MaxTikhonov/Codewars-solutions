@@ -125,5 +125,9 @@ function longest(s1, s2) {
 // For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
 
 function squareSum(numbers) {
-
+  let b = [];
+  b = numbers.map(x => x ** 2);
+  return b.reduce(function (previousValue, currentValue) {
+    return previousValue + currentValue;
+  });
 }
