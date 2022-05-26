@@ -205,5 +205,7 @@ function oddOrEven(array) {
 // number(["a", "b", "c"]) // => ["1: a", "2: b", "3: c"]
 
 var number = function (array) {
-  //your awesome code here
+  return array.map((item, index) => {
+    return `${index + 1}: ${item}`;
+  })
 }
