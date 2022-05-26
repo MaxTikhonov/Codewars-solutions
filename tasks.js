@@ -249,5 +249,8 @@ function highAndLow(numbers) {
 // 0 <= s <= 59
 
 function past(h, m, s) {
-  //#Happy Coding! ^_^
+  if ((0 <= h <= 23) && (0 <= m <= 59) && (0 <= s <= 59)) {
+    let b = (h * 3600000) + (m * 60000) + (s * 1000);
+    return b;
+  }
 }
