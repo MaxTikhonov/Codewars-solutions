@@ -224,5 +224,8 @@ var number = function (array) {
 // Output string must be two numbers separated by a single space, and highest number is first.
 
 function highAndLow(numbers) {
-  // ...
+  let b = numbers.split(' ');
+  const max = Math.max(...b);
+  const min = Math.min(...b);
+  return String(max) + ' ' + String(min);
 }
