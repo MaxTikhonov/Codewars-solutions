@@ -254,3 +254,30 @@ function past(h, m, s) {
     return b;
   }
 }
+
+// --- task 13 ---
+
+// Bubble sorting binded to some button on page using addEventListener with opportunity to dispatch arguments
+
+let arr1 = [6, 3, 4, 1, 0, 10, 11, 8, 2, 7, -1, 9, -2, 5]
+function bubbleSorting(arr) {
+ let forEscapingFromLoop = 0;
+ for (; forEscapingFromLoop < 1;) {
+  let checkPoint = 0;
+  for (let i = 0; i < arr.length; i++) {
+   let temp = 0;
+   if (i + 1 != arr.length) {
+    if (arr[i] > arr[i + 1]) {
+     checkPoint++;
+     temp = arr[i];
+     arr[i] = arr[i + 1];
+     arr[i + 1] = temp;
+    }
+   }
+  }
+  checkPoint == 0 ? forEscapingFromLoop = 1 : forEscapingFromLoop = 0;
+ }
+ console.log(arr);
+}
+const btn = document.querySelector('.btn');
+btn.addEventListener('click', () => bubbleSorting(arr1));
